@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Generics | Store</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="stores.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src=https://code.jquery.com/jquery-3.4.1.min.js></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+ 
+    </head>
+    <body>
+        <header class="main-header">
+            <h1 class="band-name band-name-large">The Food Cart</h1>
+        </header>
+
+        <section class="container content-section">
+            <!-- <h2 class="section-header">Chinese</h2> -->
+            <div class="shop-items hello">
+            </div>
+        </section>
+       
+    
+        <section class="container content-section mine">
+            
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row mine">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items mine">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+
+            <input class="btn btn-primary btn-purchase" type="submit" name="PURCHASE" value="PURCHASE" />
+        </section>
+       <script>
+            var purchase =  document.getElementsByClassName('btn-purchase')[0]
+            purchase.addEventListener('click',function(){
+                var x = document.forms.length //your desired number or number of forms
+           for(i = 0; i< x; i++){
+           document.forms[i].submit();
+         }
+            })
+           
+       </script>
+        <script type="text/javascript" src="store.js"></script>    
+
+    </body>
+</html>
